@@ -1,0 +1,43 @@
+.movie-detail-container {
+  margin: 60px 0;
+
+  .movie-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .movie-title {
+      color: var(--color-blue);
+      margin: 8px 0;
+    }
+  }
+
+  .movie-plot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color-white);
+
+    .plot-title {
+      font-size: 1.4rem;
+    }
+    .plot-description {
+      font-size: 1.2rem;
+    }
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .movie-detail {
+    flex-direction: column;
+  }
+  .movie {
+    display: flex;
+  }
+  .img-thumbnail {
+    margin: 0 auto;
+  }
+}

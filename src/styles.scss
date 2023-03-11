@@ -1,0 +1,21 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto", serif;
+  --color-blue: #0dcaf0;
+  --color-white: #fbfbfb;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+}

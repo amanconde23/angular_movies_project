@@ -1,0 +1,33 @@
+.container-movies {
+  max-width: 620px;
+  margin: auto;
+
+  .movies-search-section {
+    padding: 20px 0;
+
+    h1 {
+      color: var(--color-blue);
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    .search-bar {
+      display: flex;
+
+      i {
+        color: var(--color-blue);
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .movies-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    .movie-card {
+      display: flex;
+    }
+  }
+}

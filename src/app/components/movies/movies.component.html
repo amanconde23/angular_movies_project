@@ -1,0 +1,24 @@
+<div class="container-movies">
+  <div class="movies-search-section">
+    <h1 class="text-center">Search for any movies</h1>
+    <div class="search-bar">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Search for a movie"
+        (keydown.enter)="getMovies(search.value)"
+        #search
+      />
+      <i class="fa fa-search fa-2x" (click)="getMovies(search.value)"></i>
+    </div>
+  </div>
+
+  <div class="movies-cards">
+    <app-card-movie
+      class="movie-card"
+      *ngFor="let movie of movies"
+      [movie]="movie"
+    >
+    </app-card-movie>
+  </div>
+</div>

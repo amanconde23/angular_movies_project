@@ -1,0 +1,12 @@
+<div class="movie">
+  <div class="movie-image">
+    <img [src]="getImage()" [alt]="movie.Title" />
+  </div>
+  <div class="movie-title-btn">
+    <h3 class="movie-title">{{ movie.Title }}</h3>
+    <p class="movie-year">{{ movie.Year }}</p>
+    <button class="btn btn-primary" routerLink="/movies/{{ movie.imdbID }}">
+      Movie details
+    </button>
+  </div>
+</div>
